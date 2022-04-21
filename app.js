@@ -126,9 +126,9 @@ Add a New Project
     });
 };
 
-//promptUser()
-  //.then(promptProject)
-  //.then(portfolioData => {
+promptUser()
+  .then(promptProject)
+  .then(portfolioData => {
     const pageHTML = generatePage(portfolioData);
 
     fs.writeFile('./index.html', pageHTML, err => {
